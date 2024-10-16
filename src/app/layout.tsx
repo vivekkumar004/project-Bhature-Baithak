@@ -23,15 +23,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-  
   return (
     <html lang="en">
       <head>
-      <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-      <CssBaseline />
+        <CssBaseline />
         {children}
       </body>
     </html>

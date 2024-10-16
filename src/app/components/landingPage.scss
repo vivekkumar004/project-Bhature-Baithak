@@ -1,0 +1,145 @@
+$orangeBg:#ff1a1a;
+$font:"Poppins";
+$text-color:#1E3E62;
+$yellowBg:#f5e617;
+
+@mixin set-font(  $size:14px, $weight: 400 , $style: normal ) {
+  font-family: "Poppipns" , 'Arial', 'Helvetica', sans-serif;
+  font-style: $style;
+  font-weight: $weight;
+  font-size: $size
+}
+
+.company-title{
+  @include set-font(20px,700 ,normal );
+  color:#fff
+}
+
+.management-name{
+  @include set-font(12px,400 ,normal );
+  color:#fff
+}
+
+.landingMainPage{
+  width:100dvw;
+  height:100dvh;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+
+.all-catalog-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 4rem;
+  column-gap: 2rem;
+  justify-content:space-evenly;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.food-menu-container{
+  overflow: hidden;
+  position:relative;
+  border-radius: 5%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.image-container{
+  width: 20rem;
+  height: 20rem;
+  position:relative
+}
+
+.item-price{
+  @include set-font(22px,600 ,normal );
+  position: absolute;
+  top:-4rem;
+  z-index: 1;
+  right:-4rem;
+  background-color: #EFEFEF;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 10rem;
+  width:10rem;
+  border-radius: 100%;
+  padding-left: 1rem;
+  padding-top: 3rem;
+  border:2px solid $orangeBg
+}
+
+.item-name{
+  @include set-font(18px,600 ,normal );
+  padding:1rem
+}
+
+.headerContainer{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0.5rem;
+  background-image: linear-gradient(45deg,$orangeBg, $yellowBg);
+}
+
+.logoContainer{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 40vw;
+}
+
+.dialogContainer{
+  max-width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  }
+
+.random-sayings{
+  @include set-font(12px,600 ,normal );
+  color:$text-color
+}
+
+.footer-container{
+  border-top: 1px solid #27272897;
+  width: 100vw;
+  background-color: #F0EDD4;
+  padding:1rem 2rem;
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons-container{
+  display: flex;
+  flex-direction: row;
+  width: "100%";
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.link-text{
+  @include set-font(16px,400 ,normal );
+  color:$orangeBg
+}
+
+.location-text{
+  @include set-font(12px,400 ,normal );
+}
+
+@media only screen and (max-width: 600px) {
+  .headerContainer{
+    display:flex;
+    flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+  .logoContainer{
+   margin-bottom: 10px;
+  }
+}

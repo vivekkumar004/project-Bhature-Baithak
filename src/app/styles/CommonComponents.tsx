@@ -6,7 +6,9 @@ import { useRouter } from "next/router";
 export const LayoutBox = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
-  maxWidth: "451px",
+  padding: "1rem",
+  border: "1px solid red",
+  maxWidth: "30rem",
   [theme.breakpoints.down("sm")]: {
     margin: "40px",
   },
