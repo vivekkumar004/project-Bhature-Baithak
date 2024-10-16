@@ -74,7 +74,7 @@ function LandingPage() {
   };
 
   function sendMail() {
-    var link =
+    let link =
       "mailto:bhaturebaithak@gmail.com" +
       "&subject=" +
       encodeURIComponent("Enquiry about the food");
@@ -110,7 +110,7 @@ function LandingPage() {
               </div>
             </div>
             <div className="dialogContainer">
-              <p className="random-sayings">"{quoteData.quote}"</p>
+              <p className="random-sayings">&quot;{quoteData.quote}&quot;</p>
               <p className="random-sayings" style={{ marginRight: "0.5rem" }}>
                 -{quoteData.saidBy}
               </p>
