@@ -74,7 +74,7 @@ function LandingPage() {
   };
 
   function sendMail() {
-    let redirectionLink =
+    const redirectionLink =
       "mailto:bhaturebaithak@gmail.com" +
       "&subject=" +
       encodeURIComponent("Enquiry about the food");
