@@ -74,11 +74,11 @@ function LandingPage() {
   };
 
   function sendMail() {
-    let link =
+    let redirectionLink =
       "mailto:bhaturebaithak@gmail.com" +
       "&subject=" +
       encodeURIComponent("Enquiry about the food");
-    window.location.href = link;
+    window.location.href = redirectionLink;
   }
 
   return (
